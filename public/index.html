@@ -1,0 +1,85 @@
+<html>
+<head>
+  <style>
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  svg {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+  }
+
+  .circle
+  {
+     opacity:1;
+     fill:#b9b9b9;
+     fill-opacity:1;
+     stroke:black;
+     stroke-width:0.99986893;
+     stroke-miterlimit:3.97446823;
+     stroke-dasharray:none;
+     stroke-opacity:1;
+  }
+
+  .land
+  {
+     fill: #b9b9b9;
+     fill-opacity: 1;
+     stroke: #ffffff;
+     stroke-opacity: 1;
+     stroke-width: 0.99986997;
+     stroke-miterlimit: 3.97446823;
+     stroke-dasharray: none;
+  }
+
+  .land:hover, .circle:hover {
+   fill: red;
+  }
+
+  .ocean
+  {
+     opacity: 1;
+     color: #000000;
+     fill:white;
+     fill-opacity:1;
+     fill-rule:nonzero;
+     stroke:#000000;
+     stroke-width:0.5;
+     stroke-linecap:butt;
+     stroke-linejoin:miter;
+     marker:none;
+     marker-start:none;
+     marker-mid:none;
+     marker-end:none;
+     stroke-miterlimit:1;
+     stroke-dasharray:none;
+     stroke-dashoffset:0;
+     stroke-opacity:1;
+     visibility:visible;
+     display:inline;
+     overflow:visible;
+  }
+
+  .lake
+  {
+     fill:#ffffff;
+     fill-opacity:1;
+     stroke:#ffffff;
+     stroke-opacity:1;
+     stroke-width:0.99986997;
+     stroke-miterlimit:3.97446823;
+     stroke-dasharray:none;
+  }
+  </style>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+</head>
+<body class="content">
+	<div id="root"></div>
+</body>
+</html>
