@@ -8431,7 +8431,6 @@ const World = () => (
      id="svg1926">
 		 <Ocean />
 		 <Countries />
-		 <PE />
 	</svg>
 );
 

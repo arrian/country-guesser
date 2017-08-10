@@ -21,6 +21,11 @@ export const giveUpConfirmation = () => ({
 	type: 'GIVE_UP_CONFIRMATION'
 })
 
+export const typeGuess = text => ({
+	type: 'TYPE_GUESS',
+	text
+})
+
 export const sendGuess = guess => {
 	return (dispatch, getState) => {
 		dispatch(guessInProgress());
