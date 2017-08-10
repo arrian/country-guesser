@@ -8422,7 +8422,7 @@ const SS = () => (
 );
 
 
-const World = () => (
+const World = ({ codes }) => (
 	<svg
      viewBox="-29.947200 60.986600 2754.066400 1396.573900"
      version="1.0"
@@ -8430,7 +8430,7 @@ const World = () => (
      width="2754.066400"
      id="svg1926">
 		 <Ocean />
-		 <Countries />
+		 <Countries highlight={codes} />
 	</svg>
 );
 
@@ -8438,9 +8438,12 @@ const Country = ({ content }) => (
 	<content />
 );
 
-const Countries = () => {
+const Countries = ({highlight}) => {
 
-	const paths = [
+	let highlightMap = {};
+	highlight.forEach(h => highlightMap[h] = h);
+
+	const paths = {
 		PE,GF,BF,FR,LY,BY,PK,ID,YE,MG,BO,CI,DZ,CH,CM,MK,BW,UA,KE,TW,JO,MX,AE,BZ,BR,SL,
 		ML,CD,IT,SO,AF,BD,DO,GW,GH,AT,SE,TR,UG,MZ,JP,NZ,CU,VE,PT,CO,MR,AO,DE,SD,TH,AU,
 		PG,IQ,HR,GL,NE,DK,LV,RO,ZM,IR,MM,ET,GT,SR,EH,CZ,TD,AL,FI,SY,KG,SB,OM,PA,AR,GB,
@@ -8450,11 +8453,14 @@ const Countries = () => {
 		BT,NC,FJ,KW,TL,BS,VU,FK,GM,QA,JM,CY,PR,PS,BN,TT,CV,PF,WS,LU,RE,KM,MU,FO,MQ,ST,
 		AN,DM,GP,TO,KI,FM,BH,AD,MP,PW,SC,AG,BB,TC,VC,LC,YT,VI,GD,MT,MV,KY,KN,MS,NU,PM,
 		CK,WF,AS,MH,AW,LI,VG,SH,JE,AI,GG,SM,BM,TV,NR,GI,PN,MC,VA,IM,GU,SG
-	];
+	};
 
 	//AQ
 
-	return <g>{paths.map($path => <$path />)}</g>;
+	return <g>{Object.keys(paths).map(code => {
+		const $path = paths[code];
+		return <g className={highlightMap[code] ? 'highlight' : ''}><$path highlight={true} /></g>
+	})}</g>;
 };
 
 export default World

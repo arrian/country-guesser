@@ -31,7 +31,7 @@ export function sendGuess(guess) {
 		console.log('sending guess: ' + guess);
 		dispatch(guessInProgress());
 		return new Promise((resolve, reject) => {
-			dispatch(updateGuesses([{ id: 'au', text: 'Australia', player: 'a234cb' }]));
+			dispatch(updateGuesses([{ code: 'AU', text: 'Australia', player: '1' }]));
 		});
 	}
 };

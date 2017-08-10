@@ -1,5 +1,5 @@
 import React from 'react'
-import World from '../components/World'
+import WorldHighlight from '../components/WorldHighlight'
 // import Planets from '../components/Planets'
 import Search from '../components/Search'
 // import Options from '../components/Options'
@@ -8,7 +8,7 @@ import Search from '../components/Search'
 
 const App = () => (
   <div>
-  	<World />
+  	<WorldHighlight />
     <Search />
   </div>
 )
