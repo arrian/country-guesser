@@ -8,7 +8,7 @@ import App from './components/App'
 import reducer from './reducers'
 import { updatePlayers } from './actions'
 
-const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunkMiddleware)));
+const store = createStore(reducer, applyMiddleware(thunkMiddleware));//composeWithDevTools(applyMiddleware(thunkMiddleware)));
 
 store.dispatch(updatePlayers([ { id: 1, name: 'Ari 1' }, { id: 2, name: 'Ari 2' } ]));
 

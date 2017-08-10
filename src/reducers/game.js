@@ -8,7 +8,7 @@ const game = (state = { players: [], guesses: [], giveUp: false, currentGuess: '
 	case 'TYPE_GUESS':
 	  return Object.assign({}, state, { guessText: action.text });
 	case 'UPDATE_GUESSES':
-		return Object.assign({}, state, { sendingGuess: false, guesses: action.guesses });
+		return Object.assign({}, state, { sendingGuess: false, guesses: action.guesses, guessText: '' });
 	case 'GIVE_UP_IN_PROGRESS':
 		return Object.assign({}, state, { sendingGiveUp: true });
 	case 'GIVE_UP_CONFIRMATION':

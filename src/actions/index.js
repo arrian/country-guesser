@@ -26,8 +26,9 @@ export const typeGuess = text => ({
 	text
 })
 
-export const sendGuess = guess => {
+export function sendGuess(guess) {
 	return (dispatch, getState) => {
+		console.log('sending guess: ' + guess);
 		dispatch(guessInProgress());
 		return new Promise((resolve, reject) => {
 			dispatch(updateGuesses([{ id: 'au', text: 'Australia', player: 'a234cb' }]));
@@ -35,7 +36,16 @@ export const sendGuess = guess => {
 	}
 };
 
-export const sendGiveUp = () => {
+export function sendGuessPartial(text) {
+	return (dispatch, getState) => {
+		console.log('sending partial guess: ' + text);
+		return new Promise((resolve, reject) => {
+			dispatch(typeGuess(text));
+		})
+	}
+}
+
+export function sendGiveUp() {
 	return (dispatch, getState) => {
 		dispatch(giveUpInProgress());
 		return new Promise((resolve, reject) => {

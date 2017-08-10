@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { sendGuess, typeGuess } from '../actions'
+import { sendGuess, sendGuessPartial } from '../actions'
 import { Input, Grid, Button, Dropdown } from 'semantic-ui-react'
 
-const Search = ({ query, onSendGuess, onTypeGuess, loading }) => (
+const Search = ({ query, onSendGuess, onSendGuessPartial, loading }) => (
 	<div style={{ width: '100%', maxWidth: 800, marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
-		<Input loading={loading} placeholder='Enter country...' icon='search' style={{ marginBottom: 20, width: '100%' }} size='big' value={query} onChange={onTypeGuess} onKeyDown={onSendGuess} />
+		<Input loading={loading} placeholder='Enter country...' icon='search' style={{ marginBottom: 20, width: '100%' }} size='big' value={query} onChange={onSendGuessPartial} onKeyDown={event => event.key === 'Enter' ? onSendGuess(event) : null } />
 	</div>
 )
 
@@ -21,7 +21,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = ({
 	onSendGuess: (event) => sendGuess(event.target.value),
-	onTypeGuess: (event) => typeGuess(event.target.value)
+	onSendGuessPartial: (event) => sendGuessPartial(event.target.value)
 })
 
 const ConnectedSearch = connect(
