@@ -1,7 +1,9 @@
 
-export const updatePlayers = players => ({
-	type: 'UPDATE_PLAYERS',
-	players
+
+
+export const updateWorld = world => ({
+	type: 'UPDATE_WORLD',
+	world
 });
 
 export const guessInProgress = () => ({
@@ -27,7 +29,7 @@ export const typeGuess = text => ({
 })
 
 export function sendGuess(guess) {
-	return (dispatch, getState) => {
+	return (dispatch, getState, socket) => {
 		console.log('sending guess: ' + guess);
 		dispatch(guessInProgress());
 		return new Promise((resolve, reject) => {
@@ -37,7 +39,7 @@ export function sendGuess(guess) {
 };
 
 export function sendGuessPartial(text) {
-	return (dispatch, getState) => {
+	return (dispatch, getState, socket) => {
 		console.log('sending partial guess: ' + text);
 		return new Promise((resolve, reject) => {
 			dispatch(typeGuess(text));
@@ -46,7 +48,7 @@ export function sendGuessPartial(text) {
 }
 
 export function sendGiveUp() {
-	return (dispatch, getState) => {
+	return (dispatch, getState, socket) => {
 		dispatch(giveUpInProgress());
 		return new Promise((resolve, reject) => {
 			dispatch(giveUpConfirmation())

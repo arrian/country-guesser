@@ -1,8 +1,8 @@
 
 const game = (state = { players: [], guesses: [], giveUp: false, currentGuess: '', sendingGuess: false, sendingGiveUp: false, guessText: '' }, action) => {
 	switch(action.type) {
-	case 'UPDATE_PLAYERS':
-		return Object.assign({}, state, { players: action.players });
+	case 'UPDATE_WORLD':
+		return Object.assign({}, state, { players: action.world.players, guesses: action.world.guesses });
 	case 'GUESS_IN_PROGRESS':
 		return Object.assign({}, state, { sendingGuess: true });
 	case 'TYPE_GUESS':

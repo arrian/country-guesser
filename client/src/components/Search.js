@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { sendGuess, sendGuessPartial } from '../actions'
+import Player from './Player'
 import { Input, Grid, Button, Dropdown } from 'semantic-ui-react'
 
 const Search = ({ query, onSendGuess, onSendGuessPartial, loading }) => (
