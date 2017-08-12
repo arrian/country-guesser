@@ -8440,9 +8440,6 @@ const Country = ({ content }) => (
 
 const Countries = ({highlight}) => {
 
-	let highlightMap = {};
-	highlight.forEach(h => highlightMap[h] = h);
-
 	const paths = {
 		PE,GF,BF,FR,LY,BY,PK,ID,YE,MG,BO,CI,DZ,CH,CM,MK,BW,UA,KE,TW,JO,MX,AE,BZ,BR,SL,
 		ML,CD,IT,SO,AF,BD,DO,GW,GH,AT,SE,TR,UG,MZ,JP,NZ,CU,VE,PT,CO,MR,AO,DE,SD,TH,AU,
@@ -8459,7 +8456,7 @@ const Countries = ({highlight}) => {
 
 	return <g>{Object.keys(paths).map(code => {
 		const $path = paths[code];
-		return <g className={highlightMap[code] ? 'highlight' : ''}><$path highlight={true} /></g>
+		return <g className={highlight[code] || ''}><$path highlight={true} /></g>
 	})}</g>;
 };
 

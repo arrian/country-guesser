@@ -287,6 +287,7 @@
   },
   {
     "name": "Bolivia (Plurinational State of)",
+    "synonyms": ["Bolivia"],
     "id": "BO",
     "alpha-3": "BOL",
     "couninstalltry-code": "068",
@@ -309,6 +310,7 @@
   },
   {
     "name": "Bosnia and Herzegovina",
+    "synonyms": ["Bosnia", "Herzegovina"],
     "id": "BA",
     "alpha-3": "BIH",
     "country-code": "070",
@@ -364,6 +366,7 @@
   },
   {
     "name": "Brunei Darussalam",
+    "synonyms": ["Brunei"],
     "id": "BN",
     "alpha-3": "BRN",
     "country-code": "096",
@@ -441,6 +444,7 @@
   },
   {
     "name": "Cabo Verde",
+    "synonyms": ["Cape Verde"],
     "id": "CV",
     "alpha-3": "CPV",
     "country-code": "132",
@@ -463,6 +467,7 @@
   },
   {
     "name": "Central African Republic",
+    "synonyms": ["CAR"],
     "id": "CF",
     "alpha-3": "CAF",
     "country-code": "140",
@@ -518,6 +523,7 @@
   },
   {
     "name": "Cocos (Keeling) Islands",
+    "synonyms": ["Cocos Islands", "Keeling Islands"],
     "id": "CC",
     "alpha-3": "CCK",
     "country-code": "166",
@@ -562,6 +568,7 @@
   },
   {
     "name": "Congo (Democratic Republic of the)",
+    "synonyms": ["Democratic Republic of Congo", "DRC", "Democratic Republic of the Congo"],
     "id": "CD",
     "alpha-3": "COD",
     "country-code": "180",
@@ -595,6 +602,7 @@
   },
   {
     "name": "Côte d'Ivoire",
+    "synonyms": ["Ivory Coast"],
     "id": "CI",
     "alpha-3": "CIV",
     "country-code": "384",
@@ -650,6 +658,7 @@
   },
   {
     "name": "Czech Republic",
+    "synonyms": ["Czechia", "Czech"],
     "id": "CZ",
     "alpha-3": "CZE",
     "country-code": "203",
@@ -782,6 +791,7 @@
   },
   {
     "name": "Falkland Islands (Malvinas)",
+    "synonyms": ["Falkland Islands"],
     "id": "FK",
     "alpha-3": "FLK",
     "country-code": "238",
@@ -881,6 +891,7 @@
   },
   {
     "name": "Gambia",
+    "synonyms": ["The Gambia"],
     "id": "GM",
     "alpha-3": "GMB",
     "country-code": "270",
@@ -1024,6 +1035,7 @@
   },
   {
     "name": "Guinea-Bissau",
+    "synonyms": ["Guinea Bissau"],
     "id": "GW",
     "alpha-3": "GNB",
     "country-code": "624",
@@ -1068,6 +1080,7 @@
   },
   {
     "name": "Holy See",
+    "synonyms": ["The Vatican", "Vatican"],
     "id": "VA",
     "alpha-3": "VAT",
     "country-code": "336",
@@ -1145,6 +1158,7 @@
   },
   {
     "name": "Iran (Islamic Republic of)",
+    "synonyms": ["Iran", "Islamic Republic of Iran"],
     "id": "IR",
     "alpha-3": "IRN",
     "country-code": "364",
@@ -1288,6 +1302,7 @@
   },
   {
     "name": "Korea (Democratic People's Republic of)",
+    "synonyms": ["Democratic Peoples Republic of Korea", "DPRK", "North Korea", "Democratic People's Reupblic of Korea"],
     "id": "KP",
     "alpha-3": "PRK",
     "country-code": "408",
@@ -1299,6 +1314,7 @@
   },
   {
     "name": "Korea (Republic of)",
+    "synonyms": ["Republic of Korea", "South Korea"],
     "id": "KR",
     "alpha-3": "KOR",
     "country-code": "410",
@@ -1332,6 +1348,7 @@
   },
   {
     "name": "Lao People's Democratic Republic",
+    "synonyms": ["Laos", "Lao"],
     "id": "LA",
     "alpha-3": "LAO",
     "country-code": "418",
@@ -1442,6 +1459,7 @@
   },
   {
     "name": "Macedonia (the former Yugoslav Republic of)",
+    "synonyms": ["Macedonia", "FYROM"],
     "id": "MK",
     "alpha-3": "MKD",
     "country-code": "807",
@@ -1585,6 +1603,7 @@
   },
   {
     "name": "Micronesia (Federated States of)",
+    "synonyms": ["Micronesia", "Federated States of Micronesia"],
     "id": "FM",
     "alpha-3": "FSM",
     "country-code": "583",
@@ -1596,6 +1615,7 @@
   },
   {
     "name": "Moldova (Republic of)",
+    "synonyms": ["Moldova", "Republic of Moldova"],
     "id": "MD",
     "alpha-3": "MDA",
     "country-code": "498",
@@ -1717,6 +1737,7 @@
   },
   {
     "name": "Netherlands",
+    "synonyms": ["The Netherlands"],
     "id": "NL",
     "alpha-3": "NLD",
     "country-code": "528",
@@ -1860,6 +1881,7 @@
   },
   {
     "name": "Palestine, State of",
+    "synonyms": ["Palestine"],
     "id": "PS",
     "alpha-3": "PSE",
     "country-code": "275",
@@ -1882,6 +1904,7 @@
   },
   {
     "name": "Papua New Guinea",
+    "synonyms": ["PNG"],
     "id": "PG",
     "alpha-3": "PNG",
     "country-code": "598",
@@ -1981,6 +2004,7 @@
   },
   {
     "name": "Réunion",
+    "synonyms": ["Reunion"],
     "id": "RE",
     "alpha-3": "REU",
     "country-code": "638",
@@ -2003,6 +2027,7 @@
   },
   {
     "name": "Russian Federation",
+    "synonyms": ["Russia"],
     "id": "RU",
     "alpha-3": "RUS",
     "country-code": "643",
@@ -2036,6 +2061,7 @@
   },
   {
     "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "synonym": ["Ascension Islands", "Ascension Island"],
     "id": "SH",
     "alpha-3": "SHN",
     "country-code": "654",
@@ -2124,6 +2150,7 @@
   },
   {
     "name": "Sao Tome and Principe",
+    "synonyms": ["Sao Tome", "Principe"],
     "id": "ST",
     "alpha-3": "STP",
     "country-code": "678",
@@ -2333,6 +2360,7 @@
   },
   {
     "name": "Svalbard and Jan Mayen",
+    "synonyms": ["Svalbard"],
     "id": "SJ",
     "alpha-3": "SJM",
     "country-code": "744",
@@ -2377,6 +2405,7 @@
   },
   {
     "name": "Syrian Arab Republic",
+    "synonyms": ["Syria"],
     "id": "SY",
     "alpha-3": "SYR",
     "country-code": "760",
@@ -2388,6 +2417,7 @@
   },
   {
     "name": "Taiwan, Province of China",
+    "synonyms": ["Taiwan"],
     "id": "TW",
     "alpha-3": "TWN",
     "country-code": "158",
@@ -2410,6 +2440,7 @@
   },
   {
     "name": "Tanzania, United Republic of",
+    "synonyms": ["Tanzania"],
     "id": "TZ",
     "alpha-3": "TZA",
     "country-code": "834",
@@ -2432,6 +2463,7 @@
   },
   {
     "name": "Timor-Leste",
+    "synonyms": ["East Timor"],
     "id": "TL",
     "alpha-3": "TLS",
     "country-code": "626",
@@ -2476,6 +2508,7 @@
   },
   {
     "name": "Trinidad and Tobago",
+    "synonyms": ["Trinidad", "Tobago"],
     "id": "TT",
     "alpha-3": "TTO",
     "country-code": "780",
@@ -2564,6 +2597,7 @@
   },
   {
     "name": "United Arab Emirates",
+    "synonyms": ["UAE"],
     "id": "AE",
     "alpha-3": "ARE",
     "country-code": "784",
@@ -2575,6 +2609,7 @@
   },
   {
     "name": "United Kingdom of Great Britain and Northern Ireland",
+    "synonyms": ["United Kingdom"],
     "id": "GB",
     "alpha-3": "GBR",
     "country-code": "826",
@@ -2586,6 +2621,7 @@
   },
   {
     "name": "United States of America",
+    "synonyms": ["United States", "America", "USA"],
     "id": "US",
     "alpha-3": "USA",
     "country-code": "840",
@@ -2641,6 +2677,7 @@
   },
   {
     "name": "Venezuela (Bolivarian Republic of)",
+    "synonyms": ["Venezuela"],
     "id": "VE",
     "alpha-3": "VEN",
     "country-code": "862",
@@ -2652,6 +2689,7 @@
   },
   {
     "name": "Viet Nam",
+    "synonyms": ["Vietnam"],
     "id": "VN",
     "alpha-3": "VNM",
     "country-code": "704",

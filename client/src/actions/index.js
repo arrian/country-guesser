@@ -32,15 +32,17 @@ export function sendGuess(guess) {
 	return (dispatch, getState, socket) => {
 		console.log('sending guess: ' + guess);
 		dispatch(guessInProgress());
-		return new Promise((resolve, reject) => {
-			dispatch(updateGuesses([{ code: 'AU', text: 'Australia', player: '1' }]));
-		});
+		socket.emit('guess', guess);
+		// return new Promise((resolve, reject) => {
+			// dispatch(updateGuesses([{ code: 'AU', text: 'Australia', player: '1' }]));
+		// });
 	}
 };
 
 export function sendGuessPartial(text) {
 	return (dispatch, getState, socket) => {
 		console.log('sending partial guess: ' + text);
+		socket.emit('type', text);
 		return new Promise((resolve, reject) => {
 			dispatch(typeGuess(text));
 		})
@@ -50,6 +52,7 @@ export function sendGuessPartial(text) {
 export function sendGiveUp() {
 	return (dispatch, getState, socket) => {
 		dispatch(giveUpInProgress());
+		socket.emit('give up');
 		return new Promise((resolve, reject) => {
 			dispatch(giveUpConfirmation())
 		})
