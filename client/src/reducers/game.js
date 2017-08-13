@@ -4,7 +4,7 @@ const game = (state = { players: [], guesses: [], giveUp: false, currentGuess: '
 	case 'UPDATE_WORLD':
 		return Object.assign({}, state, { players: action.world.players, guesses: action.world.guesses, name: action.world.name });
 	case 'GUESS_IN_PROGRESS':
-		return Object.assign({}, state, { sendingGuess: true });
+		return Object.assign({}, state, { sendingGuess: true, guessText: '' });
 	case 'TYPE_GUESS':
 	  return Object.assign({}, state, { guessText: action.text });
 	case 'UPDATE_GUESSES':

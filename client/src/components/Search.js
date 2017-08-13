@@ -6,7 +6,7 @@ import { Input, Grid, Button, Dropdown, Label } from 'semantic-ui-react'
 
 const Search = ({ query, onSendGuess, onSendGuessPartial, loading, name, guesses }) => (
 	<div style={{ width: '100%', maxWidth: 800, marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
-		<Input loading={loading} placeholder='Enter country...' action='Guess' style={{ marginBottom: 20, width: '100%' }} size='big' value={query} onChange={onSendGuessPartial} onKeyDown={event => event.key === 'Enter' ? onSendGuess(event) : null } />
+		<Input loading={loading} placeholder='Guess a country...' action='Guess' style={{ marginBottom: 20, width: '100%' }} size='big' value={query} onChange={onSendGuessPartial} onKeyDown={event => event.key === 'Enter' ? onSendGuess(event) : null } />
 		<Label size='mini'>{name}</Label>
 	</div>
 )

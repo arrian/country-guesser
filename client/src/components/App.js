@@ -1,7 +1,7 @@
 import React from 'react'
 import WorldHighlight from '../components/WorldHighlight'
 // import Planets from '../components/Planets'
-import Search from '../components/Search'
+import Header from '../components/Header'
 // import Options from '../components/Options'
 // import { Header } from 'semantic-ui-react'
 // import { Parallax } from 'react-parallax'
@@ -9,7 +9,7 @@ import Search from '../components/Search'
 const App = () => (
   <div>
   	<WorldHighlight />
-    <Search />
+    <Header />
   </div>
 )
 
