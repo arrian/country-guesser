@@ -636,6 +636,7 @@
   },
   {
     "name": "Curaçao",
+    "synonyms": ["Curacao"],
     "id": "CW",
     "alpha-3": "CUW",
     "country-code": "531",
@@ -791,7 +792,7 @@
   },
   {
     "name": "Falkland Islands (Malvinas)",
-    "synonyms": ["Falkland Islands"],
+    "synonyms": ["Falkland Islands", "Falkland Island"],
     "id": "FK",
     "alpha-3": "FLK",
     "country-code": "238",
@@ -803,6 +804,7 @@
   },
   {
     "name": "Faroe Islands",
+    "synonyms": ["Faroe Island"],
     "id": "FO",
     "alpha-3": "FRO",
     "country-code": "234",
@@ -1080,7 +1082,7 @@
   },
   {
     "name": "Holy See",
-    "synonyms": ["The Vatican", "Vatican"],
+    "synonyms": ["The Vatican", "Vatican", "Vatican City"],
     "id": "VA",
     "alpha-3": "VAT",
     "country-code": "336",
@@ -2084,6 +2086,7 @@
   },
   {
     "name": "Saint Lucia",
+    "synonyms": ["St. Lucia", "St Lucia"],
     "id": "LC",
     "alpha-3": "LCA",
     "country-code": "662",

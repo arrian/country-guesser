@@ -5,7 +5,7 @@ import { Input, Grid, Button, Dropdown, Image, Label } from 'semantic-ui-react'
 const Player = ({ player, guesses }) => (
 	<div style={{ display: 'inline-block' }}>
 		{player.name}
-		<Label circular color={player.colour}>{guesses.filter(guess => guess.player === player.id).length}</Label>
+		<Label size='huge' circular color={player.colour}>{guesses.filter(guess => guess.player === player.id).length}</Label>
 	</div>
 )
 // <Image src='/images/empty.gif' size='tiny' shape='circular' />

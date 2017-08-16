@@ -32,7 +32,7 @@ export function sendGuess(guess) {
 	return (dispatch, getState, socket) => {
 		console.log('sending guess: ' + guess);
 		dispatch(guessInProgress());
-		socket.emit('guess', guess);
+		socket.emit('guess', guess, result => {});
 		// return new Promise((resolve, reject) => {
 			// dispatch(updateGuesses([{ code: 'AU', text: 'Australia', player: '1' }]));
 		// });
@@ -42,7 +42,7 @@ export function sendGuess(guess) {
 export function sendGuessPartial(text) {
 	return (dispatch, getState, socket) => {
 		console.log('sending partial guess: ' + text);
-		socket.emit('type', text);
+		socket.emit('type', text, result => {});
 		return new Promise((resolve, reject) => {
 			dispatch(typeGuess(text));
 		})

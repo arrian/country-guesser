@@ -18,23 +18,30 @@ io.on('connection', function(socket){
   io.emit('update', world);
 
   socket.on('guess', (text, callback) => {
-    console.log(player.id + ' guessed ' + text);
+    // console.log(player.id + ' guessed ' + text);
     const result = world.guessCountry(text, player);
+    callback(result);
     io.emit('update', world);
   });
 
   socket.on('type', (text, callback) => {
-    console.log(player.id + ' typed ' + text);
+    // console.log(player.id + ' typed ' + text);
     player.type(text);
     io.emit('update', world);
   });
 
   socket.on('give up', (text, callback) => {
     console.log(player.id + ' gave up');
-    player.giveUp();
+    const result = player.giveUp();
+    callback(result);
   });
 });
 
 http.listen(3001, function(){
   console.log('listening on *:3001');
 });
+
+// Interactive console
+var repl = require("repl");
+var r = repl.start("node> ");
+r.context.world = world;
